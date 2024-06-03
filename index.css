@@ -205,3 +205,35 @@
     height: 640px;
     background-color: rgb(73, 48, 48);
   }
+  .section3 {
+    position: fixed;
+  }
+  .char {
+    width: 300px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    animation: char1 5s ;
+  }
+  .head {
+    width: 300px;
+    height: 400px;
+    background-color: red;
+  }
+  .body {
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+  }
+  .leg {
+    width: 300px;
+    height: 200px;
+  }
+  .leg > div {
+    position: fixed;
+  }
+  
+  @keyframes char1 {
+    
+  }
