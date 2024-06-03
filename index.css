@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(170, 170, 170); */
+  }
+  main {
+    margin: auto;
+    background-color: lightskyblue;
+    display: flex;
+    overflow: hidden;
+  }
+  main, .section1, .section2, .section3 {
+    width: 1800px;
+    height: 900px;
+  }
+  .floor {
+    position: fixed;
+    width: 1800px;
+    height: 200px;
+    background-color: rgb(194, 127, 67);
+    margin-top: 700px;
+    display: flex;
+  }
+  .hand1 {
+    position: fixed;
+    width: 1800px;
+    height: 120px;
+    margin-top: 580px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(79, 79, 225);
+  }
+  .hand1 > div {
+    width: 20px;
+    height: 120px;
+    background-color: rgb(41, 41, 41);
+  }
+  .hand2 {
+    position: fixed;
+    width: 1800px;
+    height: 40px;
+    margin-top: 540px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(60, 136, 69);
+  }
+  .hand2 > div {
+    width: 20px;
+    height: 40px;
+    background-color: rgb(41, 41, 41);
+  }
+  .hand3 {
+    position: fixed;
+    width: 1800px;
+    height: 40px;
+    margin-top: 500px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .hand3 > div {
+    width: 20px;
+    height: 40px;
+    background-color: rgb(41, 41, 41);
+  }
+  .hand4 {
+    position: fixed;
+    width: 1800px;
+    height: 20px;
+    margin-top: 480px;
+    background-color: rgb(41, 41, 41);
+  }
+  .cloud1 {
+    position: fixed;
+    width: 400px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: cloud 2.5s linear infinite alternate;
+  }
+  .cloud102 {
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    border-radius: 60px;
+  }
+  .cloud101 {
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+  }
+  .cloud10101 {
+    width: 170px;
+    height: 70px;
+    background-color: white;
+    border-radius: 60px 60px 0px 0px;
+  }
+  .cloud10102 {
+    margin-top: 20px;
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    border-radius: 60px 60px 0px 0px;
+  }
+  @keyframes cloud {
+      0% { transform: translate(400px, 80px); }
+      100% { transform: translate(450px, 100px); }
+  }
+  .cloud2 {
+    position: fixed;
+    width: 400px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: cloud1 3.5s linear infinite alternate;
+  }
+  .cloud202 {
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    border-radius: 60px;
+  }
+  .cloud201 {
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+  }
+  .cloud20101 {
+    width: 170px;
+    height: 70px;
+    background-color: white;
+    border-radius: 60px 60px 0px 0px;
+  }
+  .cloud20102 {
+    margin-top: 20px;
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    border-radius: 60px 60px 0px 0px;
+  }
+  @keyframes cloud1 {
+      0% { transform: translate(1050px, 150px); }
+      100% { transform: translate(950px, 170px); }
+  }
+  .section2 {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tree1, .tree2 {
+    width: 350px;
+    height: 900px;
+    position: relative;
+  }
+  .leaf1 {
+    width: 350px;
+    height: 100px;
+    background-color: rgb(0, 158, 0);
+    border-radius: 0px 0px 80px 0px;
+  }
+  .leaf2 {
+    width: 270px;
+    height: 120px;
+    background-color: rgb(0, 158, 0);
+    border-radius: 0px 0px 90px 0px;
+  }
+  .leaf3 {
+    width: 180px;
+    height: 60px;
+    background-color: rgb(0, 158, 0);
+    border-radius: 0px 0px 60px 0px;
+  }
+  .wood1 {
+    width: 90px;
+    height: 640px;
+    background-color: rgb(119, 76, 76);
+  }
+  .leaf4 {
+    position: fixed;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(0, 110, 0);
+    border-radius: 0px 0px 80px 0px;
+  }
+  .leaf5 {
+    
+    width: 150px;
+    height: 100px;
+    background-color: rgb(0, 110, 0);
+    border-radius: 0px 0px 80px 0px;
+  }
+  .leaf6 {
+    position: fixed;
+    width: 130px;
+    height: 130px;
+    border-radius: 0px 0px 100px 0px;
+    background-color: rgb(1, 76, 1);
+  }
+  .wood2 {
+    position: fixed;
+    width: 40px;
+    height: 640px;
+    background-color: rgb(73, 48, 48);
+  }
