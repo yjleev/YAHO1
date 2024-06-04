@@ -210,30 +210,126 @@
   }
   .char {
     width: 300px;
-    height: 800px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    animation: char1 5s ;
+    animation-delay: 2s;
+    animation: char1 6s linear infinite alternate;
   }
   .head {
-    width: 300px;
-    height: 400px;
-    background-color: red;
+    width: 290px;
+    height: 200px;
+    padding-top: 100px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    overflow: hidden;
+  }
+  .head1 {
+    width: 170px;
+    height: 110px;
+    margin: 0 auto;
+    background-color: yellowgreen;
+    border-radius: 400px 400px 0px 0px;
+  }
+  .head2 {
+    width: 170px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: yellowgreen;
+    border-radius: 0px 0px 40px 40px;
+    /* overflow: hidden; */
+  }
+  .face {
+    position: relative;
+    position: fixed;
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 50%;
+    animation: face1 12s linear infinite;
+  }
+  @keyframes face1 {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(300px, 0px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
   }
   .body {
     width: 300px;
-    height: 200px;
-    background-color: blue;
+    height: 350px;
+  }
+  .body > div {
+    width: 130px;
+    height: 100px;
+    background-color: rgb(0, 178, 145);
+    border-radius: 40%;
+    padding-top: 50px;
+    margin: auto;
   }
   .leg {
-    width: 300px;
+    width: 60px;
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: 1s linear infinite;
   }
-  .leg > div {
-    position: fixed;
+  .leg > header {
+    width: 60px;
+    height: 90px;
   }
-  
+  .leg2 {
+    width: 60px;
+    height: 120px;
+    background-color: white;
+    border-radius: 25px;
+  }
+  .leg1 {
+    animation-name: leg1;
+    margin-left: 37px;
+  }
+  .leg3 {
+    position: absolute;
+    animation-name: leg3;
+    margin-left: 27px;
+    top: 350px;
+  }
+
   @keyframes char1 {
-    
+    from {
+      transform: translate(1400px, 0px);
+    }
+    to {
+      transform: translate(200px, 0px);
+    }
+  }
+  @keyframes leg1 {
+    0% {
+      transform: rotate(-45deg);
+    }
+    50% {
+      transform: rotate(45deg);
+    }
+    100% {
+      transform: rotate(-45deg);
+    }
+  }
+  @keyframes leg3 {
+    0% {
+      transform: rotate(45deg);
+    }
+    50% {
+      transform: rotate(-45deg);
+    }
+    100% {
+      transform: rotate(45deg);
+    }
   }
